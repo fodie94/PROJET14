@@ -9,7 +9,9 @@ function EmployeeListPage() {
   return (
     <div>
       <EmployeeList employees={employees} />
-      <Link to="/">Home</Link>
+      <Link to="/">
+        <div className="Home">Home</div>
+      </Link>
     </div>
   );
 }

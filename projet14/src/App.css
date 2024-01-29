@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 code {
@@ -27,8 +28,8 @@ code {
 
 label {
   display: block;
-  margin-top: 1rem;
-  margin-bottom: 10px;
+
+  padding: 0;
 }
 
 .address {
@@ -60,6 +61,7 @@ label {
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 0 50px;
 }
 
 #searchInput {
@@ -91,4 +93,20 @@ label {
 
 #department {
   margin-bottom: 10px;
+}
+
+/* .titlesearch {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+} */
+
+.p {
+  margin: 0;
+  padding: 0;
+}
+
+.Home {
+  margin-left: 50%;
 }

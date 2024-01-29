@@ -72,16 +72,17 @@ function EmployeeList() {
 
   return (
     <div>
-      <div className="search">
-        <p>search: </p>
-        <input type="text" onChange={handleFilter} />
+      <div className="titlesearch">
+        <div className="title">
+          <h1>Liste des employés</h1>
+        </div>
+        <div className="search">
+          <label htmlFor="searchInput">Rechercher :</label>
+          <input type="text" id="searchInput" onChange={handleFilter} />
+        </div>
       </div>
-      <DataTable
-        title="Liste des employés"
-        columns={columns}
-        data={records}
-        pagination
-      />
+
+      <DataTable columns={columns} data={records} pagination />
     </div>
   );
 }

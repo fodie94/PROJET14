@@ -179,11 +179,14 @@ function Accueil() {
             />
           </fieldset>
 
-          <label htmlFor="department">Department</label>
+          <label id="department-label" htmlFor="department">
+            Department
+          </label>
           <Select
             options={departmentOptions}
             id="department"
             onChange={handleDepartmentChange}
+            aria-labelledby="department-label"
           />
 
           {/* Bouton de sauvegarde déplacé à l'extérieur de la première balise <form> */}
