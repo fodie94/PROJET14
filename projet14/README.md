@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Migration d'une application jQuery vers React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-303540?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-## Available Scripts
+## Présentation
 
-In the project directory, you can run:
+HRnet est une application web interne à WealthHealth qui gère les dossiers des employés.
 
-### `npm start`
+Ce dépôt convertit les plugins de la bibliothèque jQuery de l'application en composants React pour gagner en performance et fiabilité.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Au lieu des 4 plugins jQuery, l'application utilise des composants React importés à partir de bibliothèques existantes, à l'exception du package Modal qui a été créé pour cette occasion.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Lien vers le site déployé : https://p14-h-rnet-ruddy.vercel.app/
 
-### `npm test`
+Lien du dépôt du projet avec la bibliothèque jQuery : https://github.com/OpenClassrooms-Student-Center/P12_Front-end
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation du package
 
-### `npm run build`
+### 1/ Cloner ce dépôt
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2/ Installer les dépendances : `npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3/ Lancer l'application :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dans le terminal, exécutez la commande : `npm start`
 
-### `npm run eject`
+### 4/ Construire et prévisualiser :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dans le terminal, exécutez les commandes :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm run build`
+`npm install -g serve`
+` serve -s build`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Lien de la bibliothèque Modal convertie en React :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- @fodieniakate/modalep14 : https://www.npmjs.com/package/@fodieniakate/modalep14
 
-## Learn More
+## Liens des autres bibliothèques React :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- react-datepicker : https://www.npmjs.com/package/react-datepicker
+- react-select : https://www.npmjs.com/package/react-select
+- react-data-table-component : https://www.npmjs.com/package/react-data-table-component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Prérequis
 
-### Code Splitting
+![npm](https://img.shields.io/badge/npm-9.1.3-%23000000?style=flat-square&logo=npm&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Node.js](https://img.shields.io/badge/Node.js-16.14.0-43853D?style=flat-square&logo=node.js&logoColor=white)
 
-### Analyzing the Bundle Size
+## Dépendances
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![@fodieniakate/modalep14](https://img.shields.io/badge/fv--modal--react-%5E0.0.9-blue)
 
-### Making a Progressive Web App
+![react-datepicker](https://img.shields.io/badge/react--datepicker-%5E4.11.0-blue)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![react-select](https://img.shields.io/badge/react--select-%5E5.0.0-blue)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![react-data-table-component](https://img.shields.io/badge/react--data--table--component-%5E7.6.2-blue)
