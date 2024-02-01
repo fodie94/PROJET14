@@ -6,11 +6,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
+  /* background-color: #0cecd9; */
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/1877369962/fr/photo/green-world-map-concept-de-la-journ%C3%A9e-de-lenvironnement.jpg?s=1024x1024&w=is&k=20&c=F8t8N9-wDYhTcFBjgPThJL67cRP7z9_QTImDadIidIo=");
+  background-size: cover;
+  opacity: 0.8; /* Ajuster l'opacité selon vos préférences */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.logo-image {
+  width: 100px; /* ajustez la largeur selon vos besoins */
+  height: auto;
+}
+
+a {
+  color: white;
 }
 
 .title {
@@ -34,11 +50,16 @@ label {
 
 .address {
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 #create-employee {
   display: flex;
   flex-direction: column;
+  border: 2px solid yellowgreen;
+  background: yellowgreen;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .showSearch {

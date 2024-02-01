@@ -9,38 +9,47 @@ function EmployeeList() {
     {
       name: "firstName",
       selector: (row) => row.firstName,
+      sortable: true,
     },
     {
       name: "lastName",
       selector: (row) => row.lastName,
+      sortable: true,
     },
     {
       name: "dateOfBirth",
       selector: (row) => row.dateOfBirth,
+      sortable: true,
     },
     {
       name: "startDate",
       selector: (row) => row.startDate,
+      sortable: true,
     },
     {
       name: "street",
       selector: (row) => row.street,
+      sortable: true,
     },
     {
       name: "city",
       selector: (row) => row.city,
+      sortable: true,
     },
     {
       name: "state",
       selector: (row) => row.state,
+      sortable: true,
     },
     {
       name: "zipCode",
       selector: (row) => row.zipCode,
+      sortable: true,
     },
     {
       name: "department",
       selector: (row) => row.department,
+      sortable: true,
     },
   ];
 
@@ -62,13 +71,44 @@ function EmployeeList() {
     const filterValue = event.target.value.toLowerCase();
 
     const newData = data.filter((row) => {
-      // Utiliser une expression régulière pour le filtre
-      const regex = new RegExp(filterValue, "i"); // 'i' pour ignorer la casse
+      const regex = new RegExp(filterValue, "i");
       return Object.values(row).some((value) => regex.test(value));
     });
 
     setRecords(newData);
   }
+
+  const customStyles = {
+    headCells: {
+      style: {
+        backgroundColor: "#1b7bbb",
+        color: "white",
+      },
+    },
+    cells: {
+      style: {
+        paddingLeft: "8px",
+        paddingRight: "8px",
+      },
+    },
+    pagination: {
+      style: {
+        paddingTop: "15px",
+        paddingBottom: "15px",
+      },
+    },
+    // Ajout d'une classe pour les lignes paires
+    rows: {
+      style: {
+        "&:nth-child(even)": {
+          backgroundColor: "lightgreen", // Couleur de fond verte pour les lignes paires
+        },
+        "&:nth-child(odd)": {
+          backgroundColor: "lavenderblush", // Couleur de fond lavande claire pour les lignes impaires
+        },
+      },
+    },
+  };
 
   return (
     <div>
@@ -82,7 +122,12 @@ function EmployeeList() {
         </div>
       </div>
 
-      <DataTable columns={columns} data={records} pagination />
+      <DataTable
+        columns={columns}
+        data={records}
+        pagination
+        customStyles={customStyles}
+      />
     </div>
   );
 }

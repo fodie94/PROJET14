@@ -53,6 +53,8 @@ Dans le terminal, exécutez les commandes :
 
 ![react](https://img.shields.io/badge/react-%5E18.2.0-blue)
 
+![react-dom](https://img.shields.io/badge/react-dom-%5E18.2.0-blue)
+
 ![@reduxjs/toolkit](https://img.shields.io/badge/@reduxjs/toolkit-%5E2.1.0-blue)
 
 ![react-redux](https://img.shields.io/badge/@fodieniakate/modalep14-%5E9.1.0-blue)
@@ -64,3 +66,5 @@ Dans le terminal, exécutez les commandes :
 ![react-select](https://img.shields.io/badge/react--select-%5E5.0.0-blue)
 
 ![react-data-table-component](https://img.shields.io/badge/react--data--table--component-%5E7.6.2-blue)
+
+![web-vitals](https://img.shields.io/badge/web-vitals-%5E2.1.4-blue)
