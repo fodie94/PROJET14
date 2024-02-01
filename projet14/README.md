@@ -13,8 +13,6 @@ Ce dépôt convertit les plugins de la bibliothèque jQuery de l'application en 
 
 Au lieu des 4 plugins jQuery, l'application utilise des composants React importés à partir de bibliothèques existantes, à l'exception du package Modal qui a été créé pour cette occasion.
 
-Lien vers le site déployé : https://p14-h-rnet-ruddy.vercel.app/
-
 Lien du dépôt du projet avec la bibliothèque jQuery : https://github.com/OpenClassrooms-Student-Center/P12_Front-end
 
 ## Installation du package
@@ -53,7 +51,13 @@ Dans le terminal, exécutez les commandes :
 
 ## Dépendances
 
-![@fodieniakate/modalep14](https://img.shields.io/badge/fv--modal--react-%5E0.0.9-blue)
+![react](https://img.shields.io/badge/react-%5E18.2.0-blue)
+
+![@reduxjs/toolkit](https://img.shields.io/badge/@reduxjs/toolkit-%5E2.1.0-blue)
+
+![react-redux](https://img.shields.io/badge/@fodieniakate/modalep14-%5E9.1.0-blue)
+
+![@fodieniakate/modalep14](https://img.shields.io/badge/@fodieniakate/modalep14-%5E0.0.9-blue)
 
 ![react-datepicker](https://img.shields.io/badge/react--datepicker-%5E4.11.0-blue)
 
