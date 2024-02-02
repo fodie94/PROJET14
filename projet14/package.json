@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fodieniakate/modalep14": "^0.0.9",
+    "@fodieniakate/modalep14": "^0.0.10",
     "@reduxjs/toolkit": "^2.1.0",
     "react": "^18.2.0",
     "react-data-table-component": "^7.6.2",

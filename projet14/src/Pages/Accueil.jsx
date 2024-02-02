@@ -12,7 +12,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Select from "react-select";
 import "react-calendar/dist/Calendar.css";
 
-import logo from "../assets/Logo-Wealth-Health.jpg";
+//import logo from "../assets/Logo-Wealth-Health.webp";
 
 function Accueil() {
   const dispatch = useDispatch();
@@ -97,8 +97,8 @@ function Accueil() {
   return (
     <div>
       <div className="title">
-        {/* <h1>HRnet</h1> */}
-        <img src={logo} alt="Logo" className="logo-image" />
+        <h1>HRnet</h1>
+        {/* <img src={logo} alt="Logo" className="logo-image" /> */}
       </div>
       <div className="container">
         <Link to="/employee-list">View Current Employees</Link>

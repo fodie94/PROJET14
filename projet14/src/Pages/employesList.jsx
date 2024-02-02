@@ -122,12 +122,20 @@ function EmployeeList() {
         </div>
       </div>
 
-      <DataTable
-        columns={columns}
-        data={records}
-        pagination
-        customStyles={customStyles}
-      />
+      {records.length > 0 ? (
+        <DataTable
+          columns={columns}
+          data={records}
+          pagination
+          customStyles={customStyles}
+        />
+      ) : (
+        <div>
+          <label className="noEmployee">
+            Vous pouvez ajouter des employés via le tableau de bord.
+          </label>
+        </div>
+      )}
     </div>
   );
 }
