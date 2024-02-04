@@ -19,6 +19,8 @@ Lien du dépôt du projet avec la bibliothèque jQuery : https://github.com/Open
 
 ### 1/ Cloner ce dépôt
 
+https://github.com/fodie94/projet14.git
+
 ### 2/ Installer les dépendances : `npm install`
 
 ### 3/ Lancer l'application :
