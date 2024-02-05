@@ -15,7 +15,7 @@ Au lieu des 4 plugins jQuery, l'application utilise des composants React import�
 
 Lien du dépôt du projet avec la bibliothèque jQuery : https://github.com/OpenClassrooms-Student-Center/P12_Front-end
 
-## Installation du package
+## Installation
 
 ### 1/ Cloner ce dépôt
 
