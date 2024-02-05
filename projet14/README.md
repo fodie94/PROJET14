@@ -25,7 +25,9 @@ https://github.com/fodie94/projet14.git
 
 ### 3/ Lancer l'application :
 
-Dans le terminal, exécutez la commande : `npm start`
+Dans le terminal, exécutez la commande : `cd projet14`
+
+puis : `npm start`
 
 ### 4/ Construire et prévisualiser :
 
